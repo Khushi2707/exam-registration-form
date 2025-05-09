@@ -1,6 +1,7 @@
+# db_config.py
 db_config = {
-    'user': 'root',
-    'password': 'khushi123&',
-    'host': '/cloudsql/asia-south1::exam_db',
-    'database': 'exam_form'
+    'user': 'root',  # Database username
+    'password': 'khushi123&',  # Database password
+    'host': '/cloudsql/examform:asia-south1:exam_db',  # Cloud SQL instance connection name
+    'database': 'exam_form'  # Database name
 }
