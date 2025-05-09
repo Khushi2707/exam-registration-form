@@ -6,6 +6,7 @@ env_variables:
   DB_PASSWORD: "khushi123&"
   DB_NAME: "exam_form"
   DB_CONNECTION_NAME: "examform:asia-south1:exam_db"
+  STORAGE_BUCKET: "examform-staging-bucket"  # Make sure this is set correctly
 
 handlers:
 - url: /static
