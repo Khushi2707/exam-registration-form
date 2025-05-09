@@ -1,0 +1,15 @@
+runtime: python311
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  DB_USER: "root"
+  DB_PASSWORD: "YOUR_DB_PASSWORD"
+  DB_NAME: "exam_form"
+  DB_CONNECTION_NAME: "YOUR_PROJECT_ID:REGION:INSTANCE_ID"
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: auto
