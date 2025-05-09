@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Exam Registration Form</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Registration</title>
 </head>
 <body>
-    <h2>Student Exam Registration</h2>
-    <form action="/submit" method="post">
-        Name: <input type="text" name="name" required><br><br>
-        Roll No: <input type="text" name="roll" required><br><br>
-        Subject: <input type="text" name="subject" required><br><br>
-        <input type="submit" value="Register">
+    <h1>Exam Registration Form</h1>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="roll">Roll Number:</label><br>
+        <input type="text" id="roll" name="roll" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
