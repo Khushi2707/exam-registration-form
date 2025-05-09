@@ -13,3 +13,5 @@ handlers:
 
 - url: /.*
   script: auto
+
+cloud_sql_instances: "examform:asia-south1:exam_db" 
