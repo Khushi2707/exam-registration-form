@@ -3,9 +3,9 @@ entrypoint: gunicorn -b :$PORT main:app
 
 env_variables:
   DB_USER: "root"
-  DB_PASSWORD: "YOUR_DB_PASSWORD"
+  DB_PASSWORD: "khushi123&"
   DB_NAME: "exam_form"
-  DB_CONNECTION_NAME: "YOUR_PROJECT_ID:REGION:INSTANCE_ID"
+  DB_CONNECTION_NAME: "examform:REGION:exam_db"
 
 handlers:
 - url: /static
